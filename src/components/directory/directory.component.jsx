@@ -11,23 +11,23 @@ class Directory extends React.Component {
     this.state = {
       sections: [
         {
-            title: 'Hyderabad',
-            imageUrl: '<img src="https://img2.pngio.com/hyderabad-png-6-png-image-hyderabad-png-1077_485.png" alt="Hyderabad png 6 » PNG Image">',
-            id: 1,
-            linkUrl: 'Hyderabad'
-            },
-            {
-            title: 'Bangalore',
-            imageUrl: '<img src="https://www.pngjoy.com/pngm/217/4237264_gamora-bangalore-skyline-painting-hd-png-download.png" alt="Gamora - Bangalore Skyline Painting, HD Png Download@pngjoy.com">',
-            id: 2,
-            linkUrl: 'Bangalore'
-            },
-            {
-            title: 'Kochi',
-            imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
-            id: 3,
-            linkUrl: 'Kochi'
-            }
+          title: 'KOCHI',
+          imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0p_3wCocSgei9XyQbT3rmvaAYT6jMa1sqA&usqp=CAU',
+          id: 1,
+          linkUrl: ''
+        },
+        {
+          title: 'HYDERABAD',
+          imageUrl: 'https://www.mylescars.com/img/myles_internal_pages/1579589346_Z-hyd-1.png',
+          id: 2,
+          linkUrl: ''
+        },
+        {
+          title: 'BANGALORE',
+          imageUrl: 'https://www.pngjoy.com/pngm/217/4237264_gamora-bangalore-skyline-painting-hd-png-download.png',
+          id: 3,
+          linkUrl: ''
+        }
       ]
     };
   }

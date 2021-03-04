@@ -10,12 +10,15 @@ const Header = () => (
         <Link className ='logo-container' to= '/'>
             <Logo className='logo'/>
         </Link>
-
-        <div className='options'>
-        
-      <Link className='option' to='/signin'>
+    <div className='options'>
+         <Link className='option' to='/'>
+        CONTACT
+         </Link>
+      
+        <Link className='option' to='/signin'>
           SIGN IN
-           </Link>
+        </Link>
+      
       
       </div>
       </div>
