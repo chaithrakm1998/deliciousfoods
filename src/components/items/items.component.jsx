@@ -1,5 +1,6 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import './items.styles.scss';
 
@@ -16,7 +17,10 @@ const Items = ({ title, imageUrl, size, history, linkUrl, match }) => (
     />
     <div className='content'>
       <h1 className='title'>{title.toUpperCase()}</h1>
-      <span className='subtitle'>food</span>
+      <span>
+          <a href='/hotels'>foods</a>
+      </span>
+      
     </div>
   </div>
 );

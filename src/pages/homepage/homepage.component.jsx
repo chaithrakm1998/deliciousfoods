@@ -3,8 +3,7 @@ import React from 'react';
 import './homepage.styles.scss';
 import Directory from '../../components/directory/directory.component';
 import Header from '../../components/header/header.components';
-//import header from '../../components/content-item/content-item.component';
-// initializing component homepage
+
 const HomePage =() => (
     <div  className=" homepage">
         
