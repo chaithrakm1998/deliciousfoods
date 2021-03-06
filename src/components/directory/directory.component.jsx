@@ -10,15 +10,15 @@ class Directory extends React.Component {
 
     this.state = {
       sections: [
-        {
-          title: 'KOCHI',
-          imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0p_3wCocSgei9XyQbT3rmvaAYT6jMa1sqA&usqp=CAU',
+        {title: 'HYDERABAD',
+        imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1OvAD_XJKYbVjz6aAiBns40zCZF1bxHFVNA&usqp=CAU',
+          
           id: 1,
           linkUrl: ''
         },
         {
-          title: 'HYDERABAD',
-          imageUrl: 'https://www.mylescars.com/img/myles_internal_pages/1579589346_Z-hyd-1.png',
+          title: 'KOCHI',
+          imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0p_3wCocSgei9XyQbT3rmvaAYT6jMa1sqA&usqp=CAU',
           id: 2,
           linkUrl: ''
         },

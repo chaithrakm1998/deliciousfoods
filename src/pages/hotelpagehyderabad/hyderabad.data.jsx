@@ -12,32 +12,32 @@ class Hyderabad extends React.Component {
       sections: [
         {
             id: 11,
-            name: 'Mirchi ka Salan',
-            imageUrl: 'https://image.scoopwhoop.com/w620/s3.scoopwhoop.com/ach/Hy/1.jpg.webp',
+            name: 'The Indi Grill',
+            imageUrl: 'https://lh5.googleusercontent.com/p/AF1QipNh0GgcxqrZg7TYC2v7yK8RQ1FAt2MGcmegJP0c=w408-h271-k-no',
             price: 25
           },
           {
             id: 12,
-            name: 'Hyderabadi Biryani',
-            imageUrl: 'https://image.scoopwhoop.com/w620/s3.scoopwhoop.com/ach/Hy/2.jpg.webp',
+            name: 'Fanooz Restaurant',
+            imageUrl: 'https://lh5.googleusercontent.com/p/AF1QipMYlZDFguT8z-28487s0b78SAObG4S1wusKAxL_=w408-h306-k-no',
             price: 18
           },
           {
             id: 13,
-            name: 'Keema Samosa',
-            imageUrl: 'https://image.scoopwhoop.com/w620/s3.scoopwhoop.com/ach/Hy/5.jpg.webp',
+            name: 'Jewel of Nizam',
+            imageUrl: 'https://lh5.googleusercontent.com/p/AF1QipM4gPjiQvc34AJnUAWl70Tz3yg21x4reIfnVMYC=w408-h339-k-no',
             price: 35
           },
           {
             id: 14,
-            name: 'Malai Korma',
-            imageUrl: 'https://image.scoopwhoop.com/w620/s4.scoopwhoop.com/ach/Hy/12.jpg.webp',
+            name: 'Okra',
+            imageUrl: 'https://lh5.googleusercontent.com/p/AF1QipMZItTljiBAtDPjkARptI_rDxd-zFXYR0Sk6A-t=w408-h272-k-no',
             price: 25
           },
           {
             id: 15,
-            name: 'Burani Raita',
-            imageUrl: 'https://s3.scoopwhoop.com/ach/Hy/new14.png',
+            name: 'Firdaus',
+            imageUrl: 'https://lh5.googleusercontent.com/p/AF1QipMISlE68Q6qb69qm_94GWramBWiYDHCcAG6DT-_=w408-h306-k-no',
             price: 18
           }
       ]

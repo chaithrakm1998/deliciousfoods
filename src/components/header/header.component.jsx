@@ -16,6 +16,7 @@ const Header = ({ currentUser, hidden }) => (
               <Logo className='logo' />
           </Link>
         </div>
+        
   
   
         {currentUser ? (
@@ -31,4 +32,8 @@ const Header = ({ currentUser, hidden }) => (
   );
   
   
-  export default Header;
+  const mapStateToProps = ({ user: { currentUser }}) => ({
+    currentUser
+  });
+  
+  export default connect(mapStateToProps)(Header);

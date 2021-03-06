@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, withRouter } from 'react-router-dom';
+import { NavLink, Route, withRouter } from 'react-router-dom';
 import {Link} from 'react-router-dom';
 
 import './items.styles.scss';
@@ -14,18 +14,10 @@ const Items = ({ title, imageUrl, size, history, linkUrl, match }) => (
       style={{
         backgroundImage: `url(${imageUrl})`
       }}
-    />
-    <div className='content'>
-      
-      <h1 className='title'>{title}</h1>
-      
-      
-
-      
-    </div>
-    
-  </div>
+    />  
   
+  
+  </div>
 );
 
 export default withRouter(Items);
