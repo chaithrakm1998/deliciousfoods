@@ -1,10 +1,9 @@
 import React from 'react';
 import { Route, withRouter } from 'react-router-dom';
-import {Link} from 'react-router-dom';
 
-import './items.styles.scss';
+import './food-items.styles.scss';
 
-const Items = ({ title, imageUrl, size, history, linkUrl, match }) => (
+const FoodItems = ({ title, imageUrl, size, history, linkUrl, match }) => (
   <div
     className={`${size} items`}
     onClick={() => history.push(`${match.url}${linkUrl}`)}
@@ -15,17 +14,9 @@ const Items = ({ title, imageUrl, size, history, linkUrl, match }) => (
         backgroundImage: `url(${imageUrl})`
       }}
     />
-    <div className='content'>
-      
-      <h1 className='title'>{title}</h1>
-      
-      
-
-      
-    </div>
     
   </div>
   
 );
 
-export default withRouter(Items);
+export default withRouter(FoodItems);

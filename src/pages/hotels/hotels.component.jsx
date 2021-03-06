@@ -1,32 +1,28 @@
 import React from 'react';
+import HOTEL_DATA from './hotels.data.js'
+//embedding collection preview to shop component
+import CollectionPreview from '../../components/collection-preview/collection-preview'
 
-import Items from '../../components/items/items.component';
-import HOTEL_DATA from './hotels.data';
-
-
-class HotelPage extends React.Component {
-  constructor() {
-    super();
-
-    this.state = {
-      sections: [
-        <div id= 'KOCHI'>
-  <span>Success!</span>
-</div>
-        
-      ]
-    };
-  }
-
-  render() {
-    return (
-      <div className='hotel-menu'>
-        {this.state.sections.map(({ id, ...otherSectionProps }) => (
-          <HOTEL_DATA key={id} {...otherSectionProps} />
-        ))}
-      </div>
-    );
-  }
+//class component as we need to deal with data/state
+class HotelPage extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            items:HOTEL_DATA
+        }
+    }
+  
+    render(){
+        const {items} = this.state;
+        return (<div className="hotel-page">
+                {
+                    items.map(({id, ...otheritemsProps}) => (
+                        <CollectionPreview key={id} {...otheritemsProps}/>
+                    ))
+                }
+            </div>
+            )
+    }
 }
 
 export default HotelPage;
