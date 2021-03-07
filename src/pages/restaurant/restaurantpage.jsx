@@ -1,15 +1,14 @@
 import React from 'react';
-import RESTAURANT_DATA from './restaurant-data.component'
+import RESTAURANT_DATA from './restaurant-data'
 import Items from '../../components/items/items.component'
 
 class RestaurantPage extends React.Component {
  constructor(props) {
      super(props);
-     console.error('id=',RESTAURANT_DATA[this.props.match.params.id].sections
-     )
+    
      this.state = {
 
-        collections: RESTAURANT_DATA[this.props.match.params.id].sections
+        collections: RESTAURANT_DATA[this.props.match.params.id].items
      }
  }
  render() {

@@ -9,7 +9,7 @@ const Items = ({  imageUrl, id ,title}) => (
     <Card.Img src={imageUrl}/>
     <Card.Body>
     <h5 class="title">{title}</h5> 
-          <Link  to = {'/reastaurantpage/'+id} className='btn btn-secondary'>See More</Link>
+          <Link  to = {'/restaurantpage/'+id} className='btn btn-secondary'>See More</Link>
     </Card.Body>
     </Card>
 
