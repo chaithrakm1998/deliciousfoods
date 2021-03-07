@@ -5,12 +5,10 @@ import './App.css';
 import Header from './components/header/header.component';
 import Homepage from './pages/homepage/homepage.component';
 import SignInSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
-//import RestaurantPage from './pages/restaurants/restaurant.component';
+import RestaurantPage from './pages/restaurant/restaurantpage';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
-import HotelPageKochi from './pages/hotelpagekochi/hotelpagekochi.components';
-import HotelPageHyderabad from './pages/hotelpagehyderabad/hotelpagehyderabad.components';
-import HotelPageBangalore from './pages/hotelpagebangalore/hotelpagebangalore.components';
+
 class App extends React.Component {
   unsubscribeFromAuth = null;
 
@@ -44,9 +42,7 @@ class App extends React.Component {
       <Switch>
       <Route exact path='/' component={Homepage} />
       <Route exact path='/signin' component={SignInSignUpPage} />
-      <Route exact path='/kochi' component={HotelPageKochi}/>
-      <Route exact path='/hyderabad' component={HotelPageHyderabad}/>
-      <Route exact path='/bangalore' component={HotelPageBangalore}/>
+      <Route exact path='/restaurantpage/:id' component={RestaurantPage} />
        <Route
             exact
             path='/signin'

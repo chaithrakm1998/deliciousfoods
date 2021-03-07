@@ -1,23 +1,18 @@
 import React from 'react';
-import { NavLink, Route, withRouter } from 'react-router-dom';
+
 import {Link} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Card} from 'react-bootstrap'
 
-import './items.styles.scss';
+const Items = ({  imageUrl, id ,title}) => (
+  <Card className = 'col-md-4' >
+    <Card.Img src={imageUrl}/>
+    <Card.Body>
+    <h5 class="title">{title}</h5> 
+          <Link  to = {'/reastaurantpage/'+id} className='btn btn-secondary'>See More</Link>
+    </Card.Body>
+    </Card>
 
-const Items = ({ title, imageUrl, size, history, linkUrl, match }) => (
-  <div
-    className={`${size} items`}
-    onClick={() => history.push(`${match.url}${linkUrl}`)}
-  >
-    <div
-      className='background-image'
-      style={{
-        backgroundImage: `url(${imageUrl})`
-      }}
-    />  
-  
-  
-  </div>
-);
+)
 
-export default withRouter(Items);
+export default Items;
